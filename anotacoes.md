@@ -28,3 +28,11 @@ yarn add redux react-redux
 Store: Inicializa o redux na nossa aplicação e precisa configurar o provider para pegar as informações do store.
 
 Provider: Ele passa para todos os componentes dentro dele a informação sobre o estado do Redux. Ele usa uma API de contexto do React.
+
+Actions
+
+Type: define o tipo de ação que está sendo realizada e é quase que obrigatório para ser enviado na action.
+
+Padrão dentro do redux é passar os dados sem ser do type dentro de um objeto chamado payload
+
+Redux: São reducers e actions basicamente, onde actions fala o que tem que fazer e reducers ouvem essas actions e realizam as ações necessários
