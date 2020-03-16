@@ -38,3 +38,13 @@ Padrão dentro do redux é passar os dados sem ser do type dentro de um objeto c
 Redux: São reducers e actions basicamente, onde actions fala o que tem que fazer e reducers ouvem essas actions e realizam as ações necessários
 
 No redux não é uma boa prática deixar as actions dentro de nossos componentes
+
+## Reactotron
+
+Ferramenta para debugar aplicação em reactjs
+
+https://github.com/infinitered/reactotron
+
+yarn add reactotron-react-js reactotron-redux
+
+Ele possui integrações com Redux, Redux Saga e axios.
