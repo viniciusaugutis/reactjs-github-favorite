@@ -4,12 +4,15 @@ import { connect } from 'react-redux';
 import * as TodoActions from './store/actions/todo';
 import { bindActionCreators } from 'redux'; //aplica o dispatch em cada uma das actions
 
-const TodoList = ({ todos, addTodo }) => {
+const TodoList = ({ todos, addTodo, removeTodo }) => {
   return (
     <>
       <ul>
         {todos.map(todo => (
-          <li key={todo.id}>{todo.text}</li>
+          <li key={todo.id}>
+            {todo.text}
+            <button onClick={() => removeTodo(todo.id)}>Remover</button>
+          </li>
         ))}
       </ul>
       <button onClick={() => addTodo('Ir trabalhar')}>Adicionar</button>
@@ -18,6 +21,7 @@ const TodoList = ({ todos, addTodo }) => {
 };
 
 TodoList.propTypes = {
+  removeTodo: PropTypes.func.isRequired,
   addTodo: PropTypes.func.isRequired,
   todos: PropTypes.arrayOf(
     PropTypes.shape({
