@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import * as TodoActions from './store/actions/todo';
+import { bindActionCreators } from 'redux'; //aplica o dispatch em cada uma das actions
 
 const TodoList = ({ todos, addTodo }) => {
   return (
@@ -29,8 +31,7 @@ const mapStateToProps = state => ({
   todos: state.todos,
 });
 
-const mapDispatchToProps = dispatch => ({
-  addTodo: text => dispatch({ type: 'ADD_TODO', payload: { text } }),
-});
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(TodoActions, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);

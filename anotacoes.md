@@ -36,3 +36,5 @@ Type: define o tipo de ação que está sendo realizada e é quase que obrigató
 Padrão dentro do redux é passar os dados sem ser do type dentro de um objeto chamado payload
 
 Redux: São reducers e actions basicamente, onde actions fala o que tem que fazer e reducers ouvem essas actions e realizam as ações necessários
+
+No redux não é uma boa prática deixar as actions dentro de nossos componentes
