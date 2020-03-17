@@ -1,6 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação em ReactJS para salvar repositórios favoritos do github, com Redux.
 
-## Available Scripts
+## Tecnologias
+
+- ReactJS
+- Redux
+- React Redux
+- Reducers
+- Reactotron
+- Saga e Axios
+- Duck Pattern
+
+## Scripts
 
 In the project directory, you can run:
 
