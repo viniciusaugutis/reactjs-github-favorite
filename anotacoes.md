@@ -48,3 +48,7 @@ https://github.com/infinitered/reactotron
 yarn add reactotron-react-js reactotron-redux
 
 Ele possui integrações com Redux, Redux Saga e axios.
+
+## Roteamento no reactjs
+
+yarn add react-router-dom
