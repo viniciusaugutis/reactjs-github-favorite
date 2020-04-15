@@ -52,3 +52,8 @@ Ele possui integrações com Redux, Redux Saga e axios.
 ## Roteamento no reactjs
 
 yarn add react-router-dom
+
+## Redux saga
+
+Ele é um middleware do Redux. Ele é entre a action e o reducer e ouve quando uma action é disparada.
+Redux saga é o mais adotado pela comunidade. Ele pega informações da api e passa para a action.
